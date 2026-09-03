@@ -2,7 +2,7 @@ export default function Footer(){
     return(
         <>
         <footer class="bg-[#1E4D3B] text-[#A3C2B5] pt-18 px-[6%] pb-8">
-    <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-8 md:gap-16 mb-14">
+    <div class="grid grid-cols-1 gap-8 mb-14">
       <div>
         <span class="text-[1.5rem] font-bold text-white block mb-[0.8rem]">Bloom</span>
         <p class="text-[0.92rem] text-[#C3E2D4] font-sans ">Fresh flowers, thoughtfully arranged and delivered across Lagos. We work with local growers to bring you the freshest blooms every day.</p>
