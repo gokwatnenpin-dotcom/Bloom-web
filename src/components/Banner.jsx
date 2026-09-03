@@ -6,7 +6,7 @@ export default function Banner() {
           Build a custom arrangement
         </h2>
         <p className="text-[1rem] text-[#C3E2D4] font-sans max-w-[380px] mt-[0.7rem]">
-          Pick your flowers, colors, and packaging. We'll craft it fresh and deliver same-day within Lagos.
+          Pick your flowers, colors, and packaging. We'll craft it fresh and deliver same-day within Plateau State, Nigeria.
         </p>
       </div>
       <span className="bg-[#EFA834] text-[#1A211E] px-9 py-4 rounded-xl text-[1rem] font-sans font-extrabold">

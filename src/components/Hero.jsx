@@ -1,6 +1,6 @@
 import HeroImg from "../assets/Gemini_Generated_Image_kwwjvtkwwjvtkwwj.jpg";
 
-export default function Hero({ onNavigate }) {
+export default function Hero() {
   return (
     <section className="flex items-center gap-16 px-[6%] py-20 min-h-[80vh]">
       <div className="flex-1">
@@ -11,10 +11,10 @@ export default function Hero({ onNavigate }) {
           Handpicked bouquets and wildflower arrangements delivered right to your door. Nature's beauty, curated with care.
         </p>
         <div className="flex gap-4">
-          <a href="/shop" onClick={(event) => { event.preventDefault(); onNavigate("/shop"); }} className="bg-[#E86A7C] text-white px-8 py-[15px] rounded-xl text-[0.95rem] font-sans font-bold">
+          <a href="/shop" className="bg-[#E86A7C] text-white px-8 py-[15px] rounded-xl text-[0.95rem] font-sans font-bold">
             Shop now
           </a>
-          <a href="/occasions" onClick={(event) => { event.preventDefault(); onNavigate("/occasions"); }} className="text-[#1E4D3B] border-2 border-[#1E4D3B] px-8 py-[15px] rounded-xl text-[0.95rem] font-sans font-bold">
+          <a href="/occasions" className="text-[#1E4D3B] border-2 border-[#1E4D3B] px-8 py-[15px] rounded-xl text-[0.95rem] font-sans font-bold">
             View occasions
           </a>
         </div>

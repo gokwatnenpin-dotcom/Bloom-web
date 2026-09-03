@@ -1,17 +1,17 @@
-export default function Products({ onNavigate }) {
+export default function Products() {
   return (
     <section className="px-[6%] pt-16 pb-20">
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-[2.4rem] text-[#1E4D3B]">Fresh picks</h2>
-        <a href="/shop" onClick={(event) => { event.preventDefault(); onNavigate("/shop"); }} className="text-[0.95rem] text-[#E86A7C] font-bold font-sans">View all →</a>
+        <a href="/shop" className="text-[0.95rem] text-[#E86A7C] font-bold font-sans">View all →</a>
       </div>
       <div className="flex gap-3 mb-10">
-        <span className="px-[22px] py-2.5 rounded-lg border text-[0.88rem] font-sans font-semibold bg-[#E86A7C] border-[#E86A7C] text-white">All</span>
-        <span className="px-[22px] py-2.5 rounded-lg border text-[0.88rem] font-sans font-semibold bg-white border-[#E6ECE8] text-[#5A6660]">Roses</span>
-        <span className="px-[22px] py-2.5 rounded-lg border text-[0.88rem] font-sans font-semibold bg-white border-[#E6ECE8] text-[#5A6660]">Bouquets</span>
-        <span className="px-[22px] py-2.5 rounded-lg border text-[0.88rem] font-sans font-semibold bg-white border-[#E6ECE8] text-[#5A6660]">Succulents</span>
-        <span className="px-[22px] py-2.5 rounded-lg border text-[0.88rem] font-sans font-semibold bg-white border-[#E6ECE8] text-[#5A6660]">Wildflowers</span>
-        <span className="px-[22px] py-2.5 rounded-lg border text-[0.88rem] font-sans font-semibold bg-white border-[#E6ECE8] text-[#5A6660]">Gift baskets</span>
+        <span className="px-5.5 py-2.5 rounded-lg border text-[0.88rem] font-sans font-semibold bg-[#E86A7C] border-[#E86A7C] text-white">All</span>
+        <span className="px-5.5 py-2.5 rounded-lg border text-[0.88rem] font-sans font-semibold bg-white border-[#E6ECE8] text-[#5A6660]">Roses</span>
+        <span className="px-5.5 py-2.5 rounded-lg border text-[0.88rem] font-sans font-semibold bg-white border-[#E6ECE8] text-[#5A6660]">Bouquets</span>
+        <span className="px-5.5 py-2.5 rounded-lg border text-[0.88rem] font-sans font-semibold bg-white border-[#E6ECE8] text-[#5A6660]">Succulents</span>
+        <span className="px-5.5 py-2.5 rounded-lg border text-[0.88rem] font-sans font-semibold bg-white border-[#E6ECE8] text-[#5A6660]">Wildflowers</span>
+        <span className="px-5.5 py-2.5 rounded-lg border text-[0.88rem] font-sans font-semibold bg-white border-[#E6ECE8] text-[#5A6660]">Gift baskets</span>
       </div>
       <div className="flex flex-col gap-7">
         <div className="flex gap-7">
@@ -34,16 +34,16 @@ export default function Products({ onNavigate }) {
 function Product({ image, alt, category, name, description, price }) {
   return (
     <div className="flex-1 bg-white rounded-xl border border-[#E6ECE8] overflow-hidden">
-      <div className="h-[230px] overflow-hidden">
+      <div className="h-57.5 overflow-hidden">
         <img src={`https://images.unsplash.com/${image}?auto=format&fit=crop&w=600&q=80`} alt={alt} className="w-full h-full object-cover" />
       </div>
       <div className="p-[1.4rem]">
         <p className="text-[0.72rem] text-[#E86A7C] font-sans uppercase font-extrabold tracking-[0.08em] mb-1">{category}</p>
         <p className="text-[1.15rem] font-bold mb-1.5 text-[#1A211E]">{name}</p>
-        <p className="text-[0.88rem] text-[#5A6660] font-sans leading-[1.5] mb-[18px]">{description}</p>
+        <p className="text-[0.88rem] text-[#5A6660] font-sans leading-normal mb-4.5">{description}</p>
         <div className="flex items-center justify-between">
           <span className="text-[1.2rem] font-extrabold text-[#1E4D3B] font-sans">{price}</span>
-          <span className="bg-[#E86A7C] text-white px-[18px] py-2.5 rounded-lg text-[0.85rem] font-sans font-bold">Add to cart</span>
+          <span className="bg-[#E86A7C] text-white px-4.5 py-2.5 rounded-lg text-[0.85rem] font-sans font-bold">Add to cart</span>
         </div>
       </div>
     </div>
